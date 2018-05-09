@@ -39,7 +39,8 @@ char* str  = "{"name":"shonm", "info":{"money":155, "sex":2}, "nClubID":500000, 
 char* retStr = sp.request("TestReq", str, &pMem, reserveLen, &retLen);  
 解析: 
 char* parsedJs = sp.dispatch(retStr, retLen, NULL, &retLen);   
-打印结果如下:    
-"{"addr":["cn", "jp"],  "info":{"money":155, "sex":2}, "age" : [11,22,33], "nClubID":500000, "name":"shonm" }"
 ```
+打印结果如下:  
+![des pic](https://github.com/shonm520/SprotoJs/blob/master/decode.jpg)
+
 实现了数据的还原
